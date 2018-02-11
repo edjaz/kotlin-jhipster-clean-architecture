@@ -2,18 +2,18 @@
 # Project Specific
 ######################
 /src/main/webapp/content/css/main.css
-/build/www/**
+build/www/**
 /src/test/javascript/coverage/
 /src/test/javascript/PhantomJS*/
 
 ######################
 # Node
 ######################
-/node/
+node/
 node_tmp/
 node_modules/
 npm-debug.log.*
-/.awcache/*
+.awcache/*
 
 ######################
 # SASS
@@ -70,14 +70,15 @@ classes/
 ######################
 # Maven
 ######################
-/log/
-/target/
+log/
+target/
 
 ######################
 # Gradle
 ######################
 .gradle/
-/build/
+build/
+out/
 
 ######################
 # Package Files
@@ -112,8 +113,8 @@ Desktop.ini
 ######################
 # Directories
 ######################
-/bin/
-/deploy/
+bin/
+deploy/
 
 ######################
 # Logs
