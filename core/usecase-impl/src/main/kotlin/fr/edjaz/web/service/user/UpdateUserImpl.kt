@@ -87,7 +87,7 @@ class UpdateUserImpl(    private val userGateway: UserGateway
                         managedAuthorities.add(it!!)
                     })
 
-                //user.authorities = managedAuthorities;
+                user.authorities = managedAuthorities;
 
                 userGateway.save(user)
                 userSearchGateway.save(user)
