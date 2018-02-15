@@ -1,0 +1,16 @@
+apply plugin: 'org.springframework.boot'
+apply plugin: 'kotlin-spring'
+
+bootRepackage.enabled = false
+
+dependencies {
+    compile "org.springframework.boot:spring-boot-starter"
+    compile "org.springframework.boot:spring-boot-actuator"
+    compile "org.springframework.boot:spring-boot-starter-data-jpa"
+    compile "org.springframework.social:spring-social-security"
+    compile "org.springframework.social:spring-social-google"
+    compile "org.springframework.social:spring-social-facebook"
+    compile "org.springframework.social:spring-social-twitter"
+    compile "org.zalando:problem-spring-web"
+
+}

@@ -1,0 +1,19 @@
+apply plugin: 'org.springframework.boot'
+apply plugin: 'kotlin-spring'
+
+bootRepackage.enabled = false
+
+dependencies {
+    compile "org.springframework.boot:spring-boot-starter-security"
+    compile "org.springframework.security:spring-security-crypto"
+
+    compile "org.springframework.boot:spring-boot-starter-thymeleaf"
+    compile "org.springframework.boot:spring-boot-starter-mail"
+    compile "org.springframework:spring-context-support"
+    compile "io.github.jhipster:jhipster"
+    compile "org.apache.commons:commons-lang3"
+
+    compile project(":core:domain")
+    compile project(":core:usecase-api")
+}
+

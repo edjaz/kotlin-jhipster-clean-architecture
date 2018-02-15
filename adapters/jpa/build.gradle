@@ -1,0 +1,31 @@
+apply plugin: 'org.springframework.boot'
+apply plugin: 'kotlin-spring'
+
+bootRepackage.enabled = false
+
+dependencies {
+
+    compile "org.hibernate:hibernate-envers"
+    compile "org.hibernate:hibernate-validator"
+
+    compile "com.fasterxml.jackson.datatype:jackson-datatype-json-org"
+    compile "com.fasterxml.jackson.datatype:jackson-datatype-hppc"
+    compile "com.fasterxml.jackson.datatype:jackson-datatype-jsr310"
+    compile "com.fasterxml.jackson.datatype:jackson-datatype-hibernate5"
+    compile "com.fasterxml.jackson.core:jackson-annotations"
+    compile "com.fasterxml.jackson.core:jackson-databind"
+    compile "com.fasterxml.jackson.module:jackson-module-afterburner"
+
+    compile "org.springframework.boot:spring-boot-starter-data-elasticsearch"
+    // needed to get around elasticsearch stacktrace about jna not found
+    // https://github.com/elastic/elasticsearch/issues/13245
+    compile "net.java.dev.jna:jna"
+
+    compile "org.springframework.social:spring-social-security"
+    compile "org.springframework.social:spring-social-google"
+    compile "org.springframework.social:spring-social-facebook"
+    compile "org.springframework.social:spring-social-twitter"
+
+
+    compile project(":core:domain")
+}

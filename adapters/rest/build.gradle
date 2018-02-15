@@ -1,0 +1,32 @@
+apply plugin: 'org.springframework.boot'
+apply plugin: 'kotlin-spring'
+
+bootRepackage.enabled = false
+
+dependencies {
+
+    compile "io.github.jhipster:jhipster"
+    compile "org.springframework.boot:spring-boot-starter-websocket"
+    compile "org.springframework.boot:spring-boot-starter-undertow"
+    compile "org.apache.commons:commons-lang3"
+
+    compile "io.dropwizard.metrics:metrics-annotation"
+    compile "io.dropwizard.metrics:metrics-core"
+    compile "io.dropwizard.metrics:metrics-jcache"
+    compile "io.dropwizard.metrics:metrics-json"
+    compile "io.dropwizard.metrics:metrics-jvm"
+    compile "io.dropwizard.metrics:metrics-servlet"
+    compile "io.dropwizard.metrics:metrics-servlets"
+
+
+    compile "org.springframework.boot:spring-boot-starter-security"
+    compile ("org.springframework.boot:spring-boot-starter-web") {
+        exclude module: 'spring-boot-starter-tomcat'
+    }
+
+    compile "io.jsonwebtoken:jjwt"
+
+
+    compile project (":core:usecase-api")
+
+}

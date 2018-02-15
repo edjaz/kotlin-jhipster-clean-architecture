@@ -1,0 +1,10 @@
+rootProject.name = 'jhispterkotlin'
+
+include 'application'
+include 'core:domain'
+include 'core:usecase-api'
+include 'core:usecase-impl'
+include 'adapters:jpa'
+include 'adapters:rest'
+
+
