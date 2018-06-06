@@ -11,6 +11,7 @@ version = '0.0.1-SNAPSHOT'
 description = ''
 
 bootRepackage {
+   enabled = false
    mainClass = 'fr.edjaz.AppApp'
 }
 
@@ -200,9 +201,9 @@ dependencies {
     }
     //jhipster-needle-gradle-dependency - JHipster will add additional dependencies here
 
-    compile project (":adapters:jpa")
-    compile project (":adapters:rest")
-    compile project (":core:usecase-impl")
+    compile project (":core:user:adapters:jpa")
+    compile project (":core:user:adapters:rest")
+    compile project (":core:user:usecase:usecase-impl")
 }
 
 task cleanResources(type: Delete) {

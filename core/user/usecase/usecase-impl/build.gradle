@@ -13,7 +13,7 @@ dependencies {
     compile "io.github.jhipster:jhipster"
     compile "org.apache.commons:commons-lang3"
 
-    compile project(":core:domain")
-    compile project(":core:usecase-api")
+    compile project(":core:user:domain")
+    compile project(":core:user:usecase:usecase-api")
 }
 

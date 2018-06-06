@@ -27,6 +27,6 @@ dependencies {
     compile "io.jsonwebtoken:jjwt"
 
 
-    compile project (":core:usecase-api")
+    compile project (":core:user:usecase:usecase-api")
 
 }

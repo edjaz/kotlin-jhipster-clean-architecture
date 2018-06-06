@@ -27,5 +27,5 @@ dependencies {
     compile "org.springframework.social:spring-social-twitter"
 
 
-    compile project(":core:domain")
+    compile project(":core:user:domain")
 }

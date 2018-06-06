@@ -30,7 +30,7 @@ plugins {
 
 
 
-configure(subprojects - project(':core')  - project(':adapters')) {
+configure(subprojects- project(':core')   - project(':core:user') - project(':core:user:adapters')  - project(':core:user:usecase')) {
     apply plugin: 'kotlin'
     apply plugin: 'java'
     sourceCompatibility=1.8
