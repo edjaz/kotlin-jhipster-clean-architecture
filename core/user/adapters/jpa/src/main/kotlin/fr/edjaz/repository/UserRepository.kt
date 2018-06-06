@@ -106,5 +106,5 @@ fun User.toEntity(): UserEntity {
     return user
 }
 
-fun Set<Authority>.toEntityList(): Set<AuthorityEntity> = this.map { it.toEntity() }.toSet()
+fun Set<Authority>.toEntityList(): MutableSet<AuthorityEntity> = this.map { it.toEntity() }.toMutableSet()
 fun Authority.toEntity(): AuthorityEntity = AuthorityEntity(name)

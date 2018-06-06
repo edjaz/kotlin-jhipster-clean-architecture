@@ -89,7 +89,7 @@ class UserEntity : AbstractAuditingEntity(), Serializable {
     @JoinTable(name = "jhi_user_authority", joinColumns = arrayOf(JoinColumn(name = "user_id", referencedColumnName = "id")), inverseJoinColumns = arrayOf(JoinColumn(name = "authority_name", referencedColumnName = "name")))
     @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
     @BatchSize(size = 20)
-    var authorities: Set<AuthorityEntity> = HashSet()
+    var authorities: MutableSet<AuthorityEntity> = HashSet()
 
 
 
